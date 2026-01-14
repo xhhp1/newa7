@@ -310,7 +310,7 @@ function generateResignation(){
     let reason=level==='متدرب'?'استقالة بمستوى متدرب':'استقالة بمستوى 1';
     result=`﷽**
 
-قرار صـادر مـن <@&1071933369698496532> 
+قرار صـادر مـن <@&1404535885864632340>
 
 الموضوع : إنهاء خدمات
 
@@ -326,16 +326,15 @@ function generateResignation(){
 
 
 إعتماد :
-<@&1071933358503903242> 
-<@725655707764129813>  
+<@&1404535891443060886>
 
-<@&1071933359086911561> 
-<@813079786855464961>   **`;
+<@&1404535891351048413>
+  **`;
   } else if(level==='مستوى 2 فما فوق'){
     const violationsText=hasViolations?hasViolations:'لا';
     result=`﷽**
 
-قرار صـادر مـن <@&1071933369698496532> 
+قرار صـادر مـن <@&1404535885864632340>
 
 الموضوع : استقالة 
 
@@ -349,11 +348,10 @@ function generateResignation(){
 
 
 إعتماد :
-<@&1071933358503903242>
-<@725655707764129813>  
+<@&1404535891443060886>
 
-<@&1071933359086911561> 
-<@813079786855464961>   **`;
+<@&1404535891351048413>
+  **`;
   }
   document.getElementById('res_output').textContent=result;
 }
@@ -395,7 +393,7 @@ function generateExternalLeave(){
   if (type === 'انتهاء اجازة خارجية') {
     const message=`**﷽
 
-قرار صـادر مـن <@&1071933369698496532> 
+قرار صـادر مـن <@&1404535885864632340>
 
 الموضوع : انتهاء اجازه خارجيه
 
@@ -403,11 +401,10 @@ function generateExternalLeave(){
 
 
 إعتماد :
-<@&1071933358503903242> 
-<@725655707764129813>  
+<@&1404535891443060886>
 
-<@&1071933359086911561> 
-<@813079786855464961>   **`;
+<@&1404535891351048413>
+  **`;
     document.getElementById('ext_output').textContent=message;
     return;
   }
@@ -421,7 +418,7 @@ function generateExternalLeave(){
     endDate.setDate(endDate.getDate()+leaveDays);
     const message=`﷽**
 
-قرار صـادر مـن <@&1071933369698496532> 
+قرار صـادر مـن <@&1404535885864632340>
 
 الموضوع : اجازة خارجية 
 
@@ -435,11 +432,10 @@ function generateExternalLeave(){
 
 
 إعتماد :
-<@&1071933358503903242> 
-<@725655707764129813>  
+<@&1404535891443060886>
 
-<@&1071933359086911561> 
-<@813079786855464961>   **`;
+<@&1404535891351048413>
+  **`;
     document.getElementById('ext_output').textContent=message;
     return;
   }
@@ -455,7 +451,7 @@ function generateExternalLeave(){
     newEndDate.setDate(newEndDate.getDate()+extensionDays);
     const message=`﷽
 
-**قرار صـادر مـن <@&1071933369698496532> 
+**قرار صـادر مـن <@&1404535885864632340>
 
 الموضوع : تمديد اجازة خارجية 
 
@@ -467,11 +463,10 @@ function generateExternalLeave(){
 
 
 إعتماد :
-<@&1071933358503903242> 
-<@725655707764129813>  
+<@&1404535891443060886>
 
-<@&1071933359086911561> 
-<@813079786855464961>   **`;
+<@&1404535891351048413>
+  **`;
     document.getElementById('ext_output').textContent=message;
     return;
   }
@@ -498,7 +493,7 @@ function generateAssignment(){
   let endDate=`${yyyy}/${mm}/${dd}`;
   let result=`﷽
 
-**قرار صادر من <@&1071933369698496532> 
+**قرار صادر من <@&1404535885864632340>
 
 الموضوع : انتداب
 
@@ -512,11 +507,10 @@ function generateAssignment(){
 
 
 إعتماد :
-<@&1071933358503903242> 
-<@725655707764129813>  
+<@&1404535891443060886>
 
-<@&1071933359086911561> 
-<@813079786855464961>    **`;
+<@&1404535891351048413>
+   **`;
   document.getElementById('ass_output').textContent=result;
 }
 function copyAssignment(){navigator.clipboard.writeText(document.getElementById('ass_output').textContent); alert("✅ تم نسخ القرار بنجاح!");}
