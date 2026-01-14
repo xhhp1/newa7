@@ -517,12 +517,13 @@ function generateRoleRequest() {
   if (!type) return alert("⚠️ الرجاء اختيار نوع الطلب");
   if (!copyId.startsWith("<@")) copyId = `<@${copyId}>`;
   const result = `
-  
-الشخص : ${copyId}
+
+
+الشخص** : ${copyId}
 
 الموضوع : ${type}
 
-
+**
 <@&1404535891443060886> 
 <@&1404535891351048413> 
 <@&1404535891376214137>
